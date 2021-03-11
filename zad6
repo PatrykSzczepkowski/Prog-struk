@@ -1,1 +1,60 @@
-# Prog-struk
+zad 1.6
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+ char lista[26];
+    char znak;
+    	for(int i = 0; i<26; i++){
+    		printf("%d:",i+1);
+        scanf(" %c", &znak);
+        lista[i] = znak;
+    }
+    int i = 0;
+    while(lista[i]!='\0'){
+        printf("%c", lista[i]);
+        i++;
+    }
+}
+
+zad2
+#include <stdio.h>
+#define RZEDY 4
+#define WIERSZE 5
+
+char x = '$';
+int v, c;
+int main(void)
+{
+
+for(v = RZEDY; v >= 0; --v)
+    {
+    for(c = v; c < WIERSZE; c++)
+    printf("%c", x);
+    printf("\n");
+    }
+    getchar();
+    return 0;
+}
+
+zad3
+#include <stdio.h>
+#define START 'F'
+#define END 'A'
+
+char x,k;
+int main()
+  {
+    for(k=START;k>=END;--k,
+        printf("\n"))
+    for(x=START;x>=k;--x)
+        printf("%c",x);
+    return 0;
+  }
+
+
+
+
+
