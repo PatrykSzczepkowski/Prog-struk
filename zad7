@@ -1,0 +1,79 @@
+zad1 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+char a;
+    int i = 0;
+int main()
+{
+    
+    while(a!='#'){
+    a = getchar();
+    i++;
+    }
+    printf("Ilosc znakow: %d", i+1);
+    return 0;
+}
+
+zad2
+
+#include <stdio.h>
+#include <stdlib.h>
+    char a;
+    char as[100];
+    int i = 0;
+int main()
+{
+
+    while(a!='#'){
+        scanf("%c", &a);
+        as[i] = a;
+        i++;
+        }
+    printf(" Ilosc znakow: %d\n", i+1);
+    i = 0;
+    while(as[i]!='\0'){
+    if(as[i]=='\n'){
+            i++;
+        }
+    printf("%c:%d\n", as[i], as[i]);
+    i++;
+    }
+    return 0;
+}
+
+zad4
+#include <stdio.h>
+#include <stdlib.h>
+char napis[150];
+int i = 0;
+char ch = 'q';
+ int ilosc = 0;
+int main()
+{
+while(ch!='#'){
+    scanf("%c", &ch);
+    napis[i] = ch;
+    i++;
+    }
+while(napis[i]!='\0'){
+    if(napis[i]=='.'){
+        printf("%c",'!');
+        i++;
+        ilosc++;
+        }
+    else if(napis[i]=='!'){
+        printf("%c",'!');
+        printf("%c",'!');
+        i++;
+        ilosc++;
+        }
+        else{
+        printf("%c",napis[i]);
+        i++;}
+    }
+    printf("\nLiczba zmian:%d", ilosc);
+    return 0;
+}
+
