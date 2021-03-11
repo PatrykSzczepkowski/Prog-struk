@@ -54,6 +54,26 @@ int main()
     return 0;
   }
 
+zad5
+#include <stdio.h>
+#include <stdlib.h>
+
+int min = 0;
+int max = 0;
+int main()
+{
+
+ printf("Podaj liczbe minimalna:");
+ scanf("%d", &min);
+ printf("Podaj liczbe maksymalna");
+ scanf("%d", &max);
+
+for(int l = min; l<max; l++){
+    printf("%d\t%d\t%d\n",l,l*l,l*l*l);
+    }
+return 0;
+}
+
 
 
 
