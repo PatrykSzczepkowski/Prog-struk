@@ -1,27 +1,19 @@
-3_2_4
-
 #include <stdio.h>
 #include <stdlib.h>
-int after(int *a, int *b);
+int suma(int *a, int *b);
 int main()
 {
-int x,y;
-printf("Podaj x:\n");
-scanf("%d", &x);
-printf("Podaj y:\n");
-scanf("%d", &y);
-printf("przed : x= %d, y=%d\n", x, y);
-after(&x,&y);
-printf("po : x= %d, y=%d\n", x, y);
-return 0;
+    int x,y;
+    printf("Podaj x:\n");
+    scanf("%d", &x);
+    printf("Podaj y:\n");
+    scanf("%d", &y);
+    printf("x= %d, y=%d\n", x, y);
+    int w=suma(&x,&y);
+    printf("Suma: %d", w);
+    return 0;
 }
-int after(int *a, int *b)
+int suma(int *a, int *b)
 {
-    if(*a>*b)
-    {
-        int temp=*a;
-        *a=*b;
-        *b=temp;
-    }
+   return *a+*b;
 }
-
